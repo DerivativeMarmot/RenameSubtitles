@@ -55,8 +55,6 @@ class Rename:
         
         modified_subs = []
         for i in range(len(selected_subs)):
-            # print(selected_subs[i])
-            # print(selected_videos[i])
             modified_sub = selected_videos[i].replace('.mkv', '.ass')
             modified_subs.append(modified_sub)
             os.rename(self.subs_path + selected_subs[i], self.subs_path + modified_sub)
