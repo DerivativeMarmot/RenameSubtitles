@@ -5,6 +5,7 @@ while True:
     print("""
         1. new path
         2. start renaming
+        q. exit
     """)
 
     match(input('> ')):
@@ -12,3 +13,5 @@ while True:
             rename.newPath()
         case '2':
             rename.rename()
+        case 'q':
+            break

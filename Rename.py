@@ -9,7 +9,6 @@ class Rename:
 
     
     def filter(self, subject:str, action:str, example:str, path) -> list :
-        # path = input('Input the file path of the {}: '.format(subject))
         keywords_raw = input('\n\
             Only {} containing this keyword need {}\n\
             example: {} (separate by comma if it\'s a list, no space need)\n\
@@ -30,6 +29,7 @@ class Rename:
                         selected.append(filename)
         print('---')
         input('Press Enter to confirm selected {}'.format(subject))
+        print('Done')
 
         return selected
     
@@ -64,3 +64,4 @@ class Rename:
         if input('Copy subtitles to video path?(y/n): ') == 'y':
             for modified_sub in modified_subs:
                 shutil.copy(self.subs_path + modified_sub, self.videos_path + modified_sub)
+            print('Done')
