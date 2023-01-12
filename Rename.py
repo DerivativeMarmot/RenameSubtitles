@@ -32,10 +32,6 @@ class Rename:
         input('Press Enter to confirm selected {}'.format(subject))
 
         return selected
-
-    
-    def copySubs(self):
-        pass
     
     
     def rename(self):
