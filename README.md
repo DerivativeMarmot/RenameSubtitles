@@ -8,7 +8,7 @@ Rename subtitles to match with the corresponding video file name.
 ```bash
 [VCB-Studio]
 ├── subs
-|   ├── sub01.ass
+│   ├── sub01.ass
 │   └── sub02.ass
 └── videos
     ├── [VCB-Studio] Sora no Otoshimono [01][Hi10p_1080p][x264_flac].mkv
